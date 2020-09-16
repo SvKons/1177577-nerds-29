@@ -4,6 +4,7 @@
 
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -16,7 +17,7 @@
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
           </div>
             <ul class="navigation-list">
-              <li class="navigation-item"><a href="blank.html" aria-label="Студия">Студия</a></li>
+              <li class="navigation-item navigation-item-active"><a href="blank.html" aria-label="Студия">Студия</a></li>
               <li class="navigation-item"><a href="blank.html" aria-label="Клиенты">Клиенты</a></li>
               <li class="navigation-item"><a href="catalog.html" aria-label="Магазин">Магазин</a></li>
               <li class="navigation-item"><a href="blank.html" aria-label="Контакты">Контакты</a></li>
@@ -66,6 +67,18 @@
               </div>
             </li>
           </ul>
+
+          <ul class="slide-button-list">
+            <li class="slide-button-item">
+              <button class="slide-button-one slide-button-active" type="button" aria-label="Первый слайд"></button>
+            </li>
+            <li class="slide-button-item">
+              <button class="slide-button-two" type="button" aria-label="второй слайд"></button>
+            </li>
+            <li class="slide-button-item">
+              <button class="slide-button-three" type="button" aria-label="Третий слайд"></button>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -106,23 +119,22 @@
                 <li class="order-item">Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
           </div>
-
           <div class="presentation nerds-img">
             <p class="advantages-title">с 2004 года любим точность во всем:</p>
-              <dl class="advantages-list">
-                <div class="advantages-item">
-                  <dt class="percent">146<sup>&percnt;</sup></dt>
-                  <dd class="items">Уровень самоотдачи</dd>
-                </div>
-                <div class="advantages-item">
-                  <dt class="percent">100<sup>&percnt;</sup></dt>
-                  <dd class="items">Соблюдение сроков</dd>
-                </div>
-                <div class="advantages-item">
-                  <dt class="percent">50<sup>&percnt;</sup></dt>
-                  <dd class="items">Минимальная предоплата</dd>
-                </div>
-              </dl>
+            <div class="advantages-list">
+
+          <table>
+            <tr>
+              <th class="percent">146<sup>&percnt;</sup></th>
+              <th class="percent">100<sup>&percnt;</sup></th>
+              <th class="percent">50<sup>&percnt;</sup></th>
+            </tr>
+            <tr>
+              <td class="items">Уровень самоотдачи</td>
+              <td class="items">Соблюдение сроков</td>
+              <td class="items">Минимальная предоплата</td>
+            </tr>
+          </table>
           </div>
         </div>
       </section>
