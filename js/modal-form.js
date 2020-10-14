@@ -1,6 +1,6 @@
-var popup = document.querySelector(".modal");
+const popup = document.querySelector(".modal");
 
-var button = document.querySelector(".write");
+const button = document.querySelector(".write");
 
 
 button.addEventListener("click", function (evt) {
@@ -10,7 +10,7 @@ button.addEventListener("click", function (evt) {
     popup.classList.remove("modal-error");
 });
 
-var close = popup.querySelector(".modal-close-button");
+const close = popup.querySelector(".modal-close-button");
 
 close.addEventListener("click", function (evt) {
     event.preventDefault();
@@ -22,10 +22,10 @@ close.addEventListener("click", function (evt) {
          }, 600);  
 });
 
-var form = popup.querySelector("form");
-var fullname = popup.querySelector("[name=fullname]");
-var email = popup.querySelector("[name=email]");
-var comment = popup.querySelector("[name=comment]");
+const form = popup.querySelector("form");
+const fullname = popup.querySelector("[name=fullname]");
+const email = popup.querySelector("[name=email]");
+const comment = popup.querySelector("[name=comment]");
 
 form.addEventListener("submit", function (evt) {
     if (!name.value || !email.value || !comment.value) {
